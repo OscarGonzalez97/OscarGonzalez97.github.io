@@ -56,7 +56,7 @@
             <h2 class="title has-text-light">About Me</h2>
             <p class="has-text-light">Welcome to my website! I'm a passionate software engineer with a love for crafting innovative web solutions.</p>
             
-            <p class="has-text-light">I bring over 6 years of hands-on experience working with web technologies. I have applied these skills not only in
+            <p id="years" class="has-text-light">I bring over 6 years of hands-on experience working with web technologies. I have applied these skills not only in
 professional settings but also in personal side projects. Proficient in developing robust and scalable applications,
 I excel at utilizing PHP, Django, Wordpress and Javascript to deliver effective solutions that meet both business
 and creative objectives. I also worked with DevOps technologies like Terraform and with different cloud providers
@@ -170,4 +170,17 @@ and creative objectives. I also worked with DevOps technologies like Terraform a
         </div>
       </footer>
 </body>
+   <script>
+      const dateNow = new Date().getFullYear()
+      const dateTrabajo = dateNow - 2019
+      const primerParrafo = document.getElementById("years")
+      if (primerParrafo) {
+        primerParrafo.textContent = `I bring over ${dateTrabajo} years of hands-on experience working with web technologies. 
+        I have applied these skills in both professional settings and personal side projects. 
+        Proficient in developing robust and scalable applications, I excel at utilizing React, PHP, Django, WordPress, Typescript and JavaScript 
+        to deliver effective solutions that meet both business and creative objectives. 
+        I also work with DevOps technologies like Terraform and various cloud providers (e.g., GCP, AWS, Contabo), 
+        managing the entire infrastructure of my personal projects using these tools.`;
+      }
+   </script>
 </html>
